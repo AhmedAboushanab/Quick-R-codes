@@ -1,7 +1,6 @@
-# Demo-3 Binding Data for hRyIIA
+# Meta-Analysis
 # Odds ratio
-# Same results with functions
-data <- read.csv("Odds-Ratio-HfcyRIIA.csv")
+data <- read.csv("file.csv")
 Odds <- metabin(Ee, Ne, Ec, Nc, sm="OR", method = "I", data= data)
 forest(Odds, comb.random = FALSE,hetstat = FALSE)
 
